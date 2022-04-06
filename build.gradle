@@ -19,11 +19,21 @@ repositories {
 }
 
 dependencies {
+	// Runtime dependencies
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.springframework.kafka:spring-kafka'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// Compile time dependencies
 	compileOnly 'org.projectlombok:lombok'
+
+	// Dev dependencies
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+	
 	annotationProcessor 'org.projectlombok:lombok'
+
+	// Test Dependencies
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.kafka:spring-kafka-test'
